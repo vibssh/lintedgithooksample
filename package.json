@@ -9,17 +9,23 @@
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "*.js": ["eslint --cache --fix", "git add"]
+    "*.js": [
+      "eslint --cache --fix",
+      "git add"
+    ]
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "babel-cli": "^6.26.0",
+    "redux": "^4.0.0",
     "vows": "^0.8.2"
   },
   "devDependencies": {
     "babel-preset-airbnb": "^2.6.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
     "eslint": "^5.5.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0"
