@@ -1,0 +1,27 @@
+{
+  "name": "lintgithook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d dest/js",
+    "eslint": "eslint . --cache --fix",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": ["eslint --cache --fix", "git add"]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "vows": "^0.8.2"
+  },
+  "devDependencies": {
+    "babel-preset-airbnb": "^2.6.0",
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
+}
